@@ -1,0 +1,30 @@
+{
+  "name": "hardhat-typescript-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "hardhat run scripts/deploy/main.ts",
+    "generate": "hardhat run scripts/generateAccount.ts",
+    "test": "hardhat test --network hardhat",
+    "account": "hardhat run scripts/listAccount.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "@openzeppelin/hardhat-upgrades": "^1.22.1",
+    "@typechain/ethers-v5": "^10.2.0",
+    "@types/mocha": "^10.0.1",
+    "@types/qrcode": "^1.5.0",
+    "hardhat": "^2.13.1",
+    "hardhat-gas-reporter": "^1.0.9",
+    "solidity-coverage": "^0.8.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "envfile": "^6.18.0",
+    "qrcode": "^1.5.1"
+  }
+}
